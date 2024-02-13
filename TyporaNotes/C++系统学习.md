@@ -2191,7 +2191,7 @@ int main()
 
 **语法：&变量名(获取变量地址)**
 
-![使用指针](E:\BaiduSyncdisk\计算机学习\TyporaStudy\TyporaPages\C++系统学习笔记图片\使用指针.png)
+![使用指针](C++系统学习.assets/使用指针.png)
 
 - 字符串不能使用&，(void*)&显示十六进制地址，(int)&显示十进制地址
 
@@ -2309,7 +2309,7 @@ int main()
 
 **变量和指向变量的指针就像同一枚硬币的两面**
 
-![变量与指针](E:\BaiduSyncdisk\计算机学习\TyporaStudy\TyporaPages\C++系统学习笔记图片\变量与指针.png)
+![变量与指针](C++系统学习.assets/变量与指针.png)
 
 - 声明一个普通变量，声明时指出数据类型和变量名（符号名），系统在内部跟踪该内存单元
 - 声明一个指针变量，**存储的值是地址**，而不是值本身，程序直接访问该内存单元
@@ -2336,7 +2336,7 @@ int main()
 - **地址传递**：如果把**函数的形参声明为指针**，调用的时候**把实参的地址传进去，形参中存放的是实参的地址，在函数中通过解引用的方法直接操作内存中的数据，可以修改实数的值**，这种方法被通俗的称为**地址传递**或**传地址**
 - **值传递**：函数的形参是普通变量
 
-![指针用于函数的参数](E:\BaiduSyncdisk\计算机学习\TyporaStudy\TyporaPages\C++系统学习笔记图片\指针用于函数的参数.png)
+![指针用于函数的参数](C++系统学习.assets/指针用于函数的参数.png)
 
 传地址的意义如下：
 
@@ -2587,7 +2587,7 @@ int main()
 
 - 在 C++ 中，程序运行时，内存主要分成四个区，分别是**栈、堆、数据段**和**代码段**
 
-![内存模型](E:\BaiduSyncdisk\计算机学习\TyporaStudy\TyporaPages\C++系统学习笔记图片\内存模型.png)
+![内存模型](C++系统学习.assets/内存模型.png)
 
 - **栈：**存储**局部变量、函数参数和返回值，系统自动管理**
 - **堆：**存储**动态开辟内存的变量**，**手动释放**
@@ -3240,7 +3240,7 @@ void func(int arr[], int len);
 - 在函中，可以用数组表示法，也可以用指针表示法
 - 在函数中，不要对指针名用sizeof运算符，它不是数组名
 
-![一维数组用于函数的参数](E:\BaiduSyncdisk\计算机学习\TyporaStudy\TyporaPages\C++系统学习笔记图片\一维数组用于函数的参数.png)
+![一维数组用于函数的参数](C++系统学习.assets/一维数组用于函数的参数.png)
 
 ### 3.3 示例
 
@@ -3401,11 +3401,11 @@ int main()
 
 - 折半查找也叫二分查找，**只适用于已排序的数组**（升序降序都可以）
 
-![1二分查找](E:\BaiduSyncdisk\计算机学习\TyporaStudy\TyporaPages\C++系统学习笔记图片\1二分查找.png)
+![1二分查找](C++系统学习.assets/1二分查找.png)
 
 下面是算法过程
 
-![2二分查找](E:\BaiduSyncdisk\计算机学习\TyporaStudy\TyporaPages\C++系统学习笔记图片\2二分查找.png)
+![2二分查找](C++系统学习.assets/2二分查找.png)
 
 ```
 #include <iostream>         // 包含头文件
@@ -3446,7 +3446,7 @@ int main()
 - C++的string使用方便，容量不够能自动扩展，不用担心内存问题，内存越界和野指针问题。String是C++的类，封装C风格的字符串。某些场景，C风格字符串更高效。C标准库，linux系统和开源库都是C语言
 - C语言约定：**如果字符型(char)数组的末尾包含空字符\0(即0)，那么该数组中的内容就是一个字符串。string对象都是以’\0’结尾的，string是C++风格字符串**
 
-![C风格字符串](E:\BaiduSyncdisk\计算机学习\TyporaStudy\TyporaPages\C++系统学习笔记图片\C风格字符串.png)
+![C风格字符串](C++系统学习.assets/C风格字符串.png)
 
 - **因为字符串需要用0结尾，所以在声明字符数组的时候，要预留多一个字节用来存放0**
 
@@ -3566,7 +3566,7 @@ const char *strrchr(const char *s, int c);
 
 ### 1.10 用于string表达式
 
-可以把C风格的字符串用于包含string类型的赋值拼接等表达式中
+可把C风格的字符串用于包含string类型的赋值拼接等表达式中
 
 ### 1.11 注意事项
 
@@ -4066,7 +4066,7 @@ sizeof(st_girl) = 48
 姓名：西施，年龄：26，体重：33.8，性别：X，颜值：1
 ```
 
-## 2. 结构体指针(难点-重要!!!)
+## 2. 结构体指针(重难点)
 
 结构体是一种自定义的数据类型，用结构体可以创建结构体变量
 
@@ -4415,7 +4415,7 @@ struct st_girl
 };
 ```
 
-![链表](E:\BaiduSyncdisk\计算机学习\TyporaStudy\TyporaPages\C++系统学习笔记图片\链表.png)
+![链表](C++系统学习.assets/链表.png)
 
 ```
 #include <iostream>         // 包含头文件
@@ -5307,7 +5307,7 @@ int main()
 
 # **面向对象编程(OOP)**
 
-![面向对象编程](E:\BaiduSyncdisk\计算机学习\TyporaStudy\TyporaPages\C++系统学习笔记图片\面向对象编程.png)
+![面向对象编程](C++系统学习.assets/面向对象编程.png)
 
 # 15 类与对象(上)
 
@@ -5513,7 +5513,7 @@ int main()
 11. 对类和对象用sizeof运算意义不大，一般不用
 12. 用结构体描述纯粹的数据，用类描述对象
 13. **在类的声明中定义的函数都将自动成为内联函数；在类的声明之外定义的函数如果使用了inline限定符，也是内联函数**
-14. 为了区分类的成员变量和成员函数的形参，把成员变量名加m_前缀或_后缀，如m_name或name_
+14. 为了区分类的成员变量和成员函数的形参，把成员变量名加m\_前缀或后缀，如m_name或name_
 15. 类的分文件编写
 
 ```
@@ -6099,9 +6099,9 @@ int main()
 
 ## 2.string容器设计目标(难点)
 
-![字节2](E:\BaiduSyncdisk\计算机学习\TyporaStudy\TyporaPages\C++系统学习笔记图片\字节2.png)
+![字节2](C++系统学习.assets/字节2.png)
 
-![C风格字符串](E:\BaiduSyncdisk\计算机学习\TyporaStudy\TyporaPages\C++系统学习笔记图片\C风格字符串.png)
+![C风格字符串](C++系统学习.assets/C风格字符串-1707803665880-13.png)
 
 ```
 1.可以存放7个字符的字符串 
@@ -6110,7 +6110,7 @@ int main()
 char cc[8];   // 在栈上分配8字节的内存空间，计算机内存是一块空间，没有数据类型的说法
 ```
 
-![字节3](E:\BaiduSyncdisk\计算机学习\TyporaStudy\TyporaPages\C++系统学习笔记图片\字节3.png)
+![字节3](C++系统学习.assets/字节3.png)
 
 ### 2.1 示例1 string看作内存空间
 
@@ -6119,7 +6119,7 @@ string是以字节为最小存储单元的动态容器。有两个作用：
 - 用于存放字符串(不存在空字符0，C风格存储字符0)
 - **用于存放数据的内存空间(缓冲区)——实际开发需求**
 
-![字节1](E:\BaiduSyncdisk\计算机学习\TyporaStudy\TyporaPages\C++系统学习笔记图片\字节1.png)
+![字节1](C++系统学习.assets/字节1.png)
 
 string内部有三个指针：
 
@@ -6128,7 +6128,7 @@ string内部有三个指针：
 - **char *finish_**：已使用空间的最后的地址
 - end-start得到容器的容量，finish-start得容器的实际字符串长度大小，所以存放字符串时，不需要空字符0
 
-![字节4](E:\BaiduSyncdisk\计算机学习\TyporaStudy\TyporaPages\C++系统学习笔记图片\字节4.png)
+![字节4](C++系统学习.assets/字节4.png)
 
 C或者C++的new，分配内存最底层调用malloc函数
 
@@ -6504,7 +6504,7 @@ private:
 - 各种STL容器模板都接受一个可选的模板参数，该参数指定使用哪个分配器对象来管理内存
 - 如果省略该模板参数的值，将默认使用**allocator\<T>，用new和delete分配和释放内存**
 
-![vector容器](E:\BaiduSyncdisk\计算机学习\TyporaStudy\TyporaPages\C++系统学习笔记图片\vector容器.png)
+![vector容器](C++系统学习.assets/vector容器.png)
 
 ### 4.1 构造函数
 
@@ -6923,7 +6923,7 @@ const_reverse_iterator crend();
 - 正向遍历容器用++，从begin()到end()，用--表示往左后退一个元素
 - 反向遍历容器用++，从rbegin()到rend()，用--表示往右后退一个元素
 
-![双向迭代器](E:\BaiduSyncdisk\计算机学习\TyporaStudy\TyporaPages\C++系统学习笔记图片\双向迭代器.png)
+![双向迭代器](C++系统学习.assets/双向迭代器.png)
 
 示例
 
@@ -7724,12 +7724,12 @@ int main()
 
 ## 4.红黑树(平衡二叉排序树)
 
-![红黑树](E:\BaiduSyncdisk\计算机学习\TyporaStudy\TyporaPages\C++系统学习笔记图片\红黑树.png)
+![红黑树](C++系统学习.assets/红黑树-1707803454156-6.png)
 
 - 插入节点，本质上做一次查找，如果查找成功，表示节点已存在，不能再插入。只有查找失败才能插入新的节点。红黑树只有删除和插入两个操作
 - 红黑树物理结构是二叉链表，比双链表多一个指针。二叉树每个节点后面有两个节点
 
-![红黑树物理结构](E:\BaiduSyncdisk\计算机学习\TyporaStudy\TyporaPages\C++系统学习笔记图片\红黑树物理结构.png)
+![红黑树物理结构](C++系统学习.assets/红黑树物理结构.png)
 
 ## 5.map容器\<map>
 
@@ -8036,13 +8036,13 @@ int mai()
 
 ## 6.哈希表/散列
 
-![哈希1](E:\BaiduSyncdisk\计算机学习\TyporaStudy\TyporaPages\C++系统学习笔记图片\哈希1.png)
+![哈希1](C++系统学习.assets/哈希1.png)
 
-![哈希2](E:\BaiduSyncdisk\计算机学习\TyporaStudy\TyporaPages\C++系统学习笔记图片\哈希2.png)
+![哈希2](C++系统学习.assets/哈希2.png)
 
-![哈希3](E:\BaiduSyncdisk\计算机学习\TyporaStudy\TyporaPages\C++系统学习笔记图片\哈希3.png)
+![哈希3](C++系统学习.assets/哈希3.png)
 
-![哈希4](E:\BaiduSyncdisk\计算机学习\TyporaStudy\TyporaPages\C++系统学习笔记图片\哈希4.png)
+![哈希4](C++系统学习.assets/哈希4.png)
 
 - 这里哈希函数是key%10，哈希函数根据key计算出数组下标，决定数据在哈希表中的分布，如果数据均匀分布在每个链表，哈希表的性能最高。
 

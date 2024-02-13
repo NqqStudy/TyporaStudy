@@ -43,20 +43,21 @@ void merge_sort(int q[], int l, int r)
 
 [Acwing 789.数的范围](https://www.acwing.com/problem/content/791/)
 ```cpp
-bool check(int x) {/* ... */} // 检查x是否满足某种性质
+bool check(int x) 
+{ } // 检查x是否满足某种性质
 
-// 区间[l, r]被划分成[l, mid]和[mid + 1, r]时使用：
+// 区间[l, r]被划分成[l, mid]和[mid + 1, r]时使用
 int bsearch_1(int l, int r)
 {
     while (l < r)
     {
         int mid = l + r >> 1;
-        if (check(mid)) r = mid;    // check()判断mid是否满足性质
+        if (check(mid)) r = mid;// check判断mid是否满足性质
         else l = mid + 1;
     }
     return l;
 }
-// 区间[l, r]被划分成[l, mid - 1]和[mid, r]时使用：
+// 区间[l, r]被划分成[l, mid - 1]和[mid, r]时使用
 int bsearch_2(int l, int r)
 {
     while (l < r)
@@ -71,7 +72,7 @@ int bsearch_2(int l, int r)
 ## 4 浮点数二分
 [Acwing 790.数的三次方根](https://www.acwing.com/problem/content/792/)
 ```cpp
-bool check(double x) {/* ... */} // 检查x是否满足某种性质
+bool check(double x) {} // 检查x是否满足某种性质
 
 double bsearch_3(double l, double r)
 {
